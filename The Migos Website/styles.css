@@ -1,17 +1,22 @@
-@font-face{
-    font-family:"BloodyModes-gwwYp";
-    src:url("Fonts/BloodyModes-gwwYp.ttf");
-        font-weight:normal;
-        font-style: normal;
-    font-family:"Dirtyboy-BxYl";
-    src:url("Fonts/Dirtyboy-BxYl.ttf")
+@font-face {
+    font-family: "StreetExplorer";
+    src: url("Fonts/StreetExplorer-X3Y9Z.otf") format("opentype");
+}
 
+@font-face {
+    font-family: "SimpleMinimalist";
+    src: url("Fonts/SimpleMinimalist-3lV3z.otf") format("opentype");
+}
+p{
+    font-size:24px;
 }
 
 *{
-    box-sizing: border-box;
-    font-family: 'StreetExplorer-X3Y9Z';
-    color: #777 ;
+    box-sizing:content-box;
+    font-family: Arial, sans-serif;
+    color: black ;
+
+
 }
 
 html, body{
@@ -58,12 +63,12 @@ html, body{
     text-align: center;
 }
 .band-name{
+    font-family: "StreetExplorer", sans-serif;
     text-align: center;
     margin:0; 
     font-size: 4em;
-    font-family:"BloodyModes-gwwYp";
     font-weight: normal;
-    color: white;
+    color:white;
 }
 .band-name-large{
     font-size: 9em;
@@ -77,7 +82,7 @@ html, body{
     padding: 0 1.5em;
 }
 .section-header{ 
-    font-family:"Dirtyboy-BxYl";
+    font-family: "StreetExplorer", sans-serif;
     font-weight: bold;
     color:#333;
     font-size: 2.5em;
@@ -146,6 +151,120 @@ html, body{
 .tour-btn{
     max-width:20%;
 }
+.shop-item{
+    margin:50px;
+} 
+
+.shop-item-title{
+    display:block;
+    width:100%;
+    text-align: center;
+    font-weight:bold;
+    font-size: 2em;
+    color:blue;
+    margin-bottom:15px;
+}
+.shop-item-image{
+    height: 250px;
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+} 
+.shop-item-price{
+    flex-grow: 1;
+    color:#333;
+}
+.shop-items{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 10 px;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color:blue;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+.cart-row{
+    display: flex;
+} 
+.cart-item{
+    width:45%;
+}
+.cart-price{
+    width: 20%;
+}
+.cart-quantity{
+    width:35%;
+}
+.cart-item-title{
+    color: navy;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image{
+    width:75px;
+    height:auto;
+    border-radius: 10px;
+}
+.btn-danger{
+    color:white;
+    background-color:#e85757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color:#cc4c4c;
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    color: #333;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right:25px;
+}
+.cart-row:last-child{
+    border-bottom: 3px solid black;
+}
+.cart-row:last-child .cart-column{
+    border:none;
+      
+}
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size:1.5em;
+    color:black;
+    margin-right: 20px;
+}
+.cart-total-price{
+    color:#333;
+    font-size: 1.1em;
+}
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.7em;
+}
 .btn-primary{
     color: white;
     background-color: #56ccf2;
@@ -157,9 +276,14 @@ html, body{
     background-color: #2d9cdb;
 }
 .main-footer{
-    background-color:#56ccf2;
+    background-color:#326374;
     color: white;
     padding: .25em 0;
+}
+.main-footer .band-name,
+.main-footer .footer-nav a {
+    font-family: "SimpleMinimalist", sans-serif;
+    color: white;
 }
 .main-footer-container{
     display: flex;
